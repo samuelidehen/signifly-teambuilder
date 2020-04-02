@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import * as contenful from "contentful";
 
 const Context = React.createContext();
-const SPACE_ID = "b94nx19xuhr6";
-const ACCESS_TOKEN = "qgnOeCOly8InYlXfoo587F8m2oNGl9VbsrfxO-0tOEQ";
+const SPACE_ID = process.env.REACT_APP_API_SPACE;
+const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
 const client = contenful.createClient({
   space: SPACE_ID,
   accessToken: ACCESS_TOKEN
