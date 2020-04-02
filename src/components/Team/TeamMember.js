@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { ButtonBase } from "@material-ui/core";
 import Modal from "react-modal";
-
+Modal.setAppElement("#root");
 export default function TeamMember(props) {
   const [selected, setSelected] = useState({ selected: false });
   const [modalIsOpen, setModalIsOpen] = useState(false);
