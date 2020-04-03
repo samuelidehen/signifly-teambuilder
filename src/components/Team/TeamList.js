@@ -44,7 +44,22 @@ class TeamList extends Component {
                     onChange={setSearch}
                   />
 
-                  {searchString === "" ? <h1>Consultants</h1> : null}
+                  {searchString === "" ? (
+                    <div>
+                      <h1>Consultants</h1> click on {"  "}
+                      <i
+                        className="fas fa-user-plus"
+                        style={{
+                          cursor: "pointer",
+                          color: "black",
+
+                          fontSize: "20px"
+                        }}
+                      />
+                      {"  "}
+                      to Add Team member
+                    </div>
+                  ) : null}
                   <Grid container spacing={2} style={{ padding: 24 }}>
                     {team.map(currentMember =>
                       currentMember.fields.department === "Consultant" ? (
