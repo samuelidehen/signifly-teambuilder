@@ -57,7 +57,7 @@ class TeamList extends Component {
                         }}
                       />
                       {"  "}
-                      to Add Team member
+                      to Add Team Member
                     </div>
                   ) : null}
                   <Grid container spacing={2} style={{ padding: 24 }}>

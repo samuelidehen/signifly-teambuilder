@@ -1,5 +1,6 @@
 import React from "react";
 import { Consumer } from "../../context";
+import { Link } from "react-router-dom";
 import Card from "../Layout/Card/Card";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
@@ -22,6 +23,13 @@ export default function GeneratedTeam() {
           <React.Fragment>
             <h1>The Assembled Team</h1>
             <Typography>{teamDescription}</Typography>
+            <Typography>
+              Copy your generated link:{" "}
+              <Link to="/generated">
+                https://signiflyteambuilder.netlify.com/
+                {Math.random() * (1000 - 100) + 100}
+              </Link>
+            </Typography>
             <Grid style={containerStyle}>
               {selectedTeam.map(currentMember => (
                 <Grid
