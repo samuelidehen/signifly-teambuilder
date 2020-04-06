@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -109,3 +110,8 @@ export default function TeamMember(props) {
     </div>
   );
 }
+
+TeamMember.propTypes = {
+  teamMember: PropTypes.object.isRequired,
+  setSelectedTeam: PropTypes.func
+};

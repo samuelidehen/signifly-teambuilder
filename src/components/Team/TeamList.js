@@ -178,5 +178,4 @@ class TeamList extends Component {
     );
   }
 }
-
 export default TeamList;
