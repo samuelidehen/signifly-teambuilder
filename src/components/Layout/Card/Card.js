@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classes from "./Card.module.css";
+import PropTypes from "prop-types";
 
 class Card extends Component {
   state = {
@@ -80,5 +81,7 @@ class Card extends Component {
     );
   }
 }
-
+Card.propTypes = {
+  teamMember: PropTypes.object.isRequired
+};
 export default Card;
