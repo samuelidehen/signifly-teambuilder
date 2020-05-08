@@ -24,7 +24,7 @@ export default function TeamMember(props) {
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}
             style={{
-              content: { height: "460px", width: "460px", margin: "auto" }
+              content: { height: "460px", width: "460px", margin: "auto" },
             }}
           >
             <i
@@ -35,14 +35,14 @@ export default function TeamMember(props) {
                 color: "white",
                 float: "right",
                 fontSize: "40px",
-                position: "static"
+                position: "static",
               }}
             />
             <CardMedia
               style={{
                 height: 0,
                 paddingTop: "56.5%",
-                backgroundPosition: "top"
+                backgroundPosition: "top",
               }}
               image={props.teamMember.fields.picture.fields.file.url}
               title={props.teamMember.fields.title}
@@ -62,7 +62,7 @@ export default function TeamMember(props) {
               style={{
                 height: 0,
                 paddingTop: "75%",
-                backgroundPosition: "top"
+                backgroundPosition: "top",
               }}
               image={props.teamMember.fields.picture.fields.file.url}
               title={props.teamMember.fields.title}
@@ -88,7 +88,7 @@ export default function TeamMember(props) {
                       cursor: "pointer",
                       color: "black",
                       float: "right",
-                      fontSize: "30px"
+                      fontSize: "30px",
                     }}
                   />
                 ) : (
@@ -98,7 +98,7 @@ export default function TeamMember(props) {
                       cursor: "pointer",
                       color: "green",
                       float: "right",
-                      fontSize: "30px"
+                      fontSize: "30px",
                     }}
                   />
                 )}
@@ -113,5 +113,5 @@ export default function TeamMember(props) {
 
 TeamMember.propTypes = {
   teamMember: PropTypes.object.isRequired,
-  setSelectedTeam: PropTypes.func
+  setSelectedTeam: PropTypes.func,
 };
